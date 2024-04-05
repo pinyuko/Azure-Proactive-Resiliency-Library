@@ -1,4 +1,4 @@
-// PM Lorraine Bichara Assad shared Kusto query code, need help to change to customer-facing Azure Resource Graph Query  
+// PM Lorraine Bichara Assad shared Kusto query code, need help to change to customer-facing Azure Resource Graph Query
 cluster('aks.kusto.windows.net').database('AKSprod').ClusterLiveMetadata
 | where PreciseTimeStamp > ago(2h)
 | summarize arg_max(PreciseTimeStamp, persistentVolumeInfo) by cluster_id, UnderlaySubscriptionID
