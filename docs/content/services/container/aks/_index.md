@@ -415,7 +415,7 @@ Ephemeral disks are ideal as OS disks for stateless applications since they prov
 
 - [Ephemeral OS disk](https://learn.microsoft.com/azure/aks/concepts-storage#ephemeral-os-disk)
 - [Configure an AKS cluster](https://learn.microsoft.com/azure/aks/cluster-configuration)
-- [Everything you want to know about ephemeral OS disks and AKS](https://learn.microsoft.com/en-us/samples/azure-samples/aks-ephemeral-os-disk/aks-ephemeral-os-disk/)
+- [Everything you want to know about ephemeral OS disks and AKS](https://learn.microsoft.com/samples/azure-samples/aks-ephemeral-os-disk/aks-ephemeral-os-disk/)
 
 
 **Resource Graph Query**
