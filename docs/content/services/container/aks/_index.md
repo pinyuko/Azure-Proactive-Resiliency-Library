@@ -274,7 +274,7 @@ For applications that need replication of data across availability zones to prot
 
 <br><br>
 
-### AKS-9 - Upgrade Persistent Volumes using in-tree drivers to Azure CSI drivers 
+### AKS-9 - Upgrade Persistent Volumes using in-tree drivers to Azure CSI drivers
 
 **Category: Storage**
 
