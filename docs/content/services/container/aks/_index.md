@@ -257,10 +257,10 @@ For applications that need replication of data across availability zones to prot
 
 - [Availability zones overview](https://learn.microsoft.com/azure/reliability/availability-zones-overview?tabs=azure-cli)
 - [Zone-redundant storage](https://learn.microsoft.com/azure/storage/common/storage-redundancy#zone-redundant-storage)
-- [ZRS disks](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks)
+- [ZRS disks](https://learn.microsoft.com/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks)
 - [Convert a disk from LRS to ZRS](https://learn.microsoft.com/azure/virtual-machines/disks-migrate-lrs-zrs)
 - [Enable multi-zone storage redundancy in Azure Container Storage](https://learn.microsoft.com/azure/storage/container-storage/enable-multi-zone-redundancy)
-- [ZRS files](https://learn.microsoft.com/azure/storage/files/files-redundancy#zone-redundant-storage) 
+- [ZRS files](https://learn.microsoft.com/azure/storage/files/files-redundancy#zone-redundant-storage)
 - [Change the redundancy configuration for a storage account](https://learn.microsoft.com/azure/storage/common/redundancy-migration)
 
 
