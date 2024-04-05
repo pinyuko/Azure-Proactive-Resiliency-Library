@@ -1,14 +1,1 @@
-// PM Lorraine Bichara Assad shared Kusto query code, need help to change to customer-facing Azure Resource Graph Query
-cluster('aks.kusto.windows.net').database('AKSprod').ClusterLiveMetadata
-| where PreciseTimeStamp > ago(2h)
-| summarize arg_max(PreciseTimeStamp, persistentVolumeInfo) by cluster_id, UnderlaySubscriptionID
-| extend PVCountUsingIntree = parse_json(persistentVolumeInfo).persistentVolumeCountPerSource
-| where PVCountUsingIntree != "" and PVCountUsingIntree != "{}"
-| mv-expand key = bag_keys(PVCountUsingIntree) to typeof(string)
-| extend value=toint(PVCountUsingIntree[key])
-| project-away PVCountUsingIntree
-| extend source=key
-| where source == 'AzureDisk' or source == 'AzureFile'
-| extend source = case(
-    source == "AzureFile", "In-Tree File", "In-Tree Disk")
-| summarize PVCountPerSub = sum(value) by source, UnderlaySubscriptionID
+// under-development
